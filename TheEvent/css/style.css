@@ -797,6 +797,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule {
   padding: 60px 0 60px 0;
+  background-color:black;
+}
+#schedule h3 {
+  color: #fff;
+}
+#schedule h4 {
+  color:yellowgreen;
 }
 
 #schedule .nav-tabs {
@@ -822,8 +829,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
-  color: #fff;
+  background-color:#fff;
+  color: black;
 }
 
 #schedule .sub-heading {
@@ -961,6 +968,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hotels {
   padding: 60px 0;
+  background-color: black;
 }
 
 #hotels .hotel {
@@ -1010,9 +1018,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #hotels p {
   padding: 0 20px;
   margin-bottom: 20px;
-  color: #060c22;
+  color: #152b79;
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1068,6 +1076,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #supporters {
   padding: 60px 0;
+  background-color: black;
 }
 
 #supporters .supporters-wrap {
@@ -1129,6 +1138,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   font-weight: 600;
   padding-right: 20px;
+  color: #fff;
 }
 
 #faq #faq-list i {
@@ -1140,6 +1150,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  color:white;
 }
 
 #faq #faq-list a.collapse {
@@ -1147,7 +1158,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list a.collapsed {
-  color: #000;
+  color: white;
 }
 
 #faq #faq-list a.collapsed i::before {
@@ -1214,6 +1225,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets {
   padding: 60px 0;
+  background-color: black;
 }
 
 #buy-tickets .card {
