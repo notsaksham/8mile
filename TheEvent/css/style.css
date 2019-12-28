@@ -797,13 +797,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule {
   padding: 60px 0 60px 0;
-  background-color:black;
+  background: url("../images/pexels-photo-255379.jpeg");
+  background-size: 100%;  
+}
+#schedule p{
+  color: #0e1b4d;
 }
 #schedule h3 {
-  color: #fff;
+  color: #0e1b4d;
 }
 #schedule h4 {
-  color:yellowgreen;
+  color: black;
+  font-size: 20px;
 }
 
 #schedule .nav-tabs {
@@ -1077,8 +1082,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #supporters {
   padding: 60px 0;
   background-color: black;
+  background: url("../images/sponsors.jpeg");
+  background-position: center;
 }
 
+#supporters h2{
+  color: #fff;  
+}
 #supporters .supporters-wrap {
   border-top: 1px solid #e0e5fa;
   border-left: 1px solid #e0e5fa;
@@ -1302,6 +1312,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact {
   padding: 60px 0;
+  background: url(../images/contact.jpeg) no-repeat;
+  background-position: center;
+
 }
 
 #contact .contact-info {
