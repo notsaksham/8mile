@@ -1604,6 +1604,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #b1a494;
   left: 300%;
 }
+
+.slide-5 {
+  background: #b1a494;
+  left: 400%;
+}
+
 .slider {
   display: flex;
   justify-content: flex-start;
@@ -1718,7 +1724,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .slide-radio1:checked ~ .slider-pagination .page1,
 .slide-radio2:checked ~ .slider-pagination .page2,
 .slide-radio3:checked ~ .slider-pagination .page3,
-.slide-radio4:checked ~ .slider-pagination .page4 {
+.slide-radio4:checked ~ .slider-pagination .page4,
+.slide-radio5:checked ~ .slider-pagination .page5 {
   width: 14px;
   height: 14px;
   border: 2px solid #ea2e49;
@@ -1742,19 +1749,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transform: translateX(-300%);
   transform: translateX(-300%);
 }
+.slide-radio5:checked ~ .slider {
+  -webkit-transform: translateX(-400%);
+  transform: translateX(-400%);
+}
  
 .slide-radio1:checked ~ .slide-1 h2,
 .slide-radio2:checked ~ .slide-2 h2,
 .slide-radio3:checked ~ .slide-3 h2,
 .slide-radio4:checked ~ .slide-4 h2,
+.slide-radio4:checked ~ .slide-5 h2,
 .slide-radio1:checked ~ .slide-1 h4,
 .slide-radio2:checked ~ .slide-2 h4,
 .slide-radio3:checked ~ .slide-3 h4,
 .slide-radio4:checked ~ .slide-4 h4,
+.slide-radio4:checked ~ .slide-5 h4,
 .slide-radio1:checked ~ .slide-1 &gt; img,
 .slide-radio2:checked ~ .slide-2 &gt; img,
 .slide-radio3:checked ~ .slide-3 &gt; img,
-.slide-radio4:checked ~ .slide-4 &gt; img {
+.slide-radio4:checked ~ .slide-4 &gt; img,
+.slide-radio4:checked ~ .slide-5 &gt; img{
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1
