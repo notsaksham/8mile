@@ -1973,3 +1973,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 .scrollend {
   transform: translateX(-1500px);
 }
+
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 300px;
+  width: 450px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 0, 34, 0.671);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .5s, ease-in 0.5s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
