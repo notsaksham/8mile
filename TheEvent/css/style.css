@@ -158,16 +158,18 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(219, 255, 18, 0.31);
+
   height: 70px;
-  padding: 15px 0;
-  transition: all 0.5s;
+  padding: 20px 0;
+  transition: all 1s;
+    color: black;
 }
 
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  padding: 6px 0;
+  padding: 60px 0;
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -184,10 +186,20 @@ h6 {
   color: #fff;
 }
 
-#header #logo img {
+#header #logo .myLogo-top {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 150px;
+  transition: all 0.1s;
+}
+
+
+
+.logo-scrolled{
+    max-height: 70px !important;
+    transition: all 0.5s;
+    padding: 0;
+    margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -470,7 +482,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
 /*  width: 100%;*/
 /*  height: 100vh;*/
-  background: url(../img/intro-bg.jpg) top center;
+  background:linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 75%, rgba(0,0,0, 1) 100%), url(../assets//slider//1.JPG) top center;
 /*  background-size: cover;*/
 /*  overflow: hidden;*/
 /*  position: relative;*/
@@ -1431,6 +1443,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .credits {
+padding-top: 10px;
   text-align: center;
   font-size: 13px;
   color: #ddd;
@@ -1576,7 +1589,7 @@ body.mobile-nav-active #mobile-nav-toggle {
  
 .number-pagination span {
   font-size: 30px;
-  color: #ea2e49;
+  color: #0a0a0a;
   letter-spacing: 4px;
 }
  
@@ -1609,11 +1622,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .slider-img{
     height: 100%;
     width: 100%;
-     background: linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 75%, rgba(0,0,0, 1) 100%),   url("http://us.123rf.com/400wm/400/400/adroach/adroach1210/adroach121000001/15602757-flower-and-bird-ornaments-retro-tile-repeat-as-many-times-as-you-like.jpg");
-    color:#544a46;
-      background-size:cover;
+     
+    color:#e8e809;
+      background-size:cover !important;
    
-        background-size: 100%;
+ 
    
 }
 
@@ -1625,7 +1638,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .slide-radio5:checked ~ .slider-pagination .page5 {
   width: 14px;
   height: 14px;
-  border: 2px solid #ea2e49;
+  border: 2px solid #ffff00;
+    border-style: dashed;
   background: transparent;
 }
  
