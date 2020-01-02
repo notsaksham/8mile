@@ -1057,6 +1057,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color:yellow; 
 }
 
+#speakers-details h3{
+  color:white;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
