@@ -714,7 +714,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #speakers {
   padding: 60px 0 30px 0;
 }
+#speakers h2{
+  color:yellow;
+}
 
+#speakers p{
+  color:white;
+}
 #speakers .speaker {
   position: relative;
   overflow: hidden;
@@ -804,115 +810,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
-/*--------------------------------------------------------------
-# Schedule Section
---------------------------------------------------------------*/
 
-#schedule {
-  padding: 60px 0 60px 0;
-  background: url("../images/pexels-photo-255379.jpeg");
-  background-size: 100%;  
-}
-#schedule p{
-  color: #0e1b4d;
-}
-#schedule h3 {
-  color: #0e1b4d;
-}
-#schedule h4 {
-  color: black;
-  font-size: 20px;
-}
-
-#schedule .nav-tabs {
-  text-align: center;
-  margin: auto;
-  display: block;
-  border-bottom: 0;
-  margin-bottom: 30px;
-}
-
-#schedule .nav-tabs li {
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-#schedule .nav-tabs a {
-  border: none;
-  border-radius: 50px;
-  font-weight: 600;
-  background-color: #0e1b4d;
-  color: #fff;
-  padding: 10px 100px;
-}
-
-#schedule .nav-tabs a.active {
-  background-color:#fff;
-  color: black;
-}
-
-#schedule .sub-heading {
-  text-align: center;
-  font-size: 18px;
-  font-style: italic;
-  margin: 0 auto 30px auto;
-}
-
-#schedule .tab-pane {
-  transition: ease-in-out .2s;
-}
-
-#schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: background-color ease-in-out 0.3s;
-}
-
-#schedule .schedule-item:hover {
-  background-color: #fff;
-}
-
-#schedule .schedule-item time {
-  padding-bottom: 5px;
-  display: inline-block;
-}
-
-#schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 50%;
-  float: left;
-  margin: 0 10px 10px 0;
-}
-
-#schedule .schedule-item .speaker img {
-  height: 100%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  margin-left: 50%;
-  transition: all ease-in-out 0.3s;
-}
-
-#schedule .schedule-item h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#schedule .schedule-item h4 span {
-  font-style: italic;
-  color: #19328e;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-#schedule .schedule-item p {
-  font-style: italic;
-  color: #152b79;
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Venue Section
@@ -921,7 +819,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #venue {
   padding: 60px 0;
 }
+#venue h2{
+  color:yellow;
+}
 
+#venue p{
+  color:white;
+}
 #venue .container-fluid {
   margin-bottom: 3px;
 }
@@ -980,66 +884,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Hotels Section
---------------------------------------------------------------*/
-
-#hotels {
-  padding: 60px 0;
-  background-color: black;
-}
-
-#hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-#hotels .hotel:hover .hotel-img img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#hotels .hotel-img {
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-#hotels .hotel-img img {
-  transition: 0.3s ease-in-out;
-}
-
-#hotels h3 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding: 0 20px;
-}
-
-#hotels a {
-  color: #152b79;
-}
-
-#hotels a:hover {
-  color: #f82249;
-}
-
-#hotels .stars {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-
-#hotels .stars i {
-  color: #ffc31d;
-}
-
-#hotels p {
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #152b79;
-  font-style: italic;
-  font-size: 20px;
-}
 
 /*--------------------------------------------------------------
 # Gallery Section
@@ -1100,7 +944,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #supporters h2{
-  color: #fff;  
+  color:yellow;
+}
+
+#supporters p{
+  color:white;
 }
 #supporters .supporters-wrap {
   border-top: 1px solid #e0e5fa;
@@ -1147,11 +995,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0;
   list-style: none;
 }
+#faq h2{
+  color:yellow;
+}
+
+#faq p{
+  color:white;
+}
 
 #faq #faq-list li {
   border-bottom: 1px solid #ddd;
 }
-
+ #faq #faq-list a :hover{
+  color:#f82249;
+} 
 #faq #faq-list a {
   padding: 18px 0;
   display: block;
@@ -1188,7 +1045,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   content: "\f055" !important;
 }
 
+/*--------------------------------------------------------------
+# speakers-details
+--------------------------------------------------------------*/
 
+#speakers-details p{
+  color:white;
+}
+
+#speakers-details h2{
+  color:yellow; 
+}
 
 /*--------------------------------------------------------------
 # Contact Section
