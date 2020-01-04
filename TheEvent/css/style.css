@@ -683,7 +683,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # About Section
 --------------------------------------------------------------*/
 
-#about {
+#aboutMenu {
   background: url("../img/about-bg.jpg");
   background-size: cover;
   overflow: hidden;
@@ -693,7 +693,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     min-height: 100vh;
 }
 
-#about:before {
+#aboutMenu:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
   position: absolute;
@@ -703,14 +703,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 
-#about h2 {
+#aboutMenu h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
 }
 
-#about h3 {
+#aboutMenu h3 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -718,7 +718,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#about p {
+#aboutMenu p {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
@@ -728,23 +728,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Speakers Section
 --------------------------------------------------------------*/
 
-#speakers {
+#eventMenu {
   padding: 60px 0 30px 0;
 }
-#speakers h2{
+#eventMenu h2{
   color:yellow;
 }
 
-#speakers p{
+#eventMenu p{
   color:white;
 }
-#speakers .speaker {
+#eventMenu .speaker {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-#speakers .speaker .details {
+#eventMenu .speaker .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
@@ -755,33 +755,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#speakers .speaker .details h3 {
+#eventMenu .speaker .details h3 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#speakers .speaker .details p {
+#eventMenu .speaker .details p {
   color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
 }
 
-#speakers .speaker .details .social {
+#eventMenu .speaker .details .social {
   height: 30px;
 }
 
-#speakers .speaker .details a {
+#eventMenu .speaker .details a {
   color: #fff;
 }
 
-#speakers .speaker .details a:hover {
+#eventMenu .speaker .details a:hover {
   color: #f82249;
 }
 
-#speakers .speaker:hover .details {
+#eventMenu .speaker:hover .details {
   bottom: 0;
 }
 
@@ -833,27 +833,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Venue Section
 --------------------------------------------------------------*/
 
-#venue {
+#venueMenu {
   padding: 60px 0;
 }
-#venue h2{
+#venueMenu h2{
   color:yellow;
 }
 
-#venue p{
+#venueMenu p{
   color:white;
 }
-#venue .container-fluid {
+#venueMenu .container-fluid {
   margin-bottom: 3px;
 }
 
-#venue .venue-map iframe {
+#venueMenu .venue-map iframe {
   width: 100%;
   height: 100%;
   min-height: 300px;
 }
 
-#venue .venue-info {
+#venueMenu .venue-info {
   background: url("../img/venue-info-bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
@@ -861,7 +861,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 60px;
 }
 
-#venue .venue-info:before {
+#venueMenu .venue-info:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
   position: absolute;
@@ -871,32 +871,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 
-#venue .venue-info h3 {
+#venueMenu .venue-info h3 {
   font-size: 36px;
   font-weight: 700;
   color: #fff;
 }
 
-#venue .venue-info p {
+#venueMenu .venue-info p {
   color: #fff;
   margin-bottom: 0;
 }
 
-#venue .venue-gallery-container {
+#venueMenu .venue-gallery-container {
   padding-right: 12px;
 }
 
-#venue .venue-gallery {
+#venueMenu .venue-gallery {
   overflow: hidden;
   border-right: 3px solid #fff;
   border-bottom: 3px solid #fff;
 }
 
-#venue .venue-gallery img {
+#venueMenu .venue-gallery img {
   transition: all ease-in-out 0.4s;
 }
 
-#venue .venue-gallery:hover img {
+#venueMenu .venue-gallery:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }

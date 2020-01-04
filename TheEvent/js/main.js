@@ -3,6 +3,18 @@
 
 jQuery(document).ready(function( $ ) {
 
+    
+    
+     $("div").mouseenter(function(){
+   	 var id = $(this).attr('id');
+   	 console.log("Id:"  + id);
+         $('a').removeClass('active');
+   	 $("[href=#"+id+"]").addClass('active');
+   });
+    
+    
+    
+    
     var c, currentScrollTop = 0,
        navbar = $('header');
  
