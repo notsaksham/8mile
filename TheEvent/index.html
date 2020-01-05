@@ -51,11 +51,11 @@ Header
 
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a id="menu" href="#homeMenu">Home</a></li>
+                        <li class="menu-active"><a id="menu" href="#intro">Home</a></li>
                         <li><a id="menu" href="#aboutMenu">About</a></li>
-                        <li><a id="menu" href="#eventsMenu">Events</a></li>
+                        <li><a id="menu" href="#eventMenu">Events</a></li>
                         <li><a id="menu" href="#venueMenu">Venue</a></li>
-                        <li><a id="menu" href="#sponserMenu">Sponsors</a></li>
+                        <li><a id="menu" href="#sponsersMenu">Sponsors</a></li>
                         <li><a id="menu" href="#faqMenu">FAQ</a></li>
                         <li><a id="menu" href="#footerMenu">Contact</a></li>
                     </ul>
@@ -89,14 +89,18 @@ Gallery Section
                 <div class="slider slide-1" id="intro">
                    
                     <div class="slider-content">
-                        <div class="intro-container wow fadeIn">
+                        <div class="intro-container">
+<!--                               <div  class="bodymovin" data-bm-path="images/dataSS.json" data-bm-renderer="svg"></div>-->
+                        <div style="width:80%;height:80%;position: absolute" id="bodymovin"></div>                     
+                            <div id="mainContent" style="opacity: 0" class="hideMainContent wow intro-container">
                             <h1 class="mb-4 pb-0">8th Mile</h1>
+                         
                 <h1 class="mb-4 pb-0">The Biggest<br><span>Fest</span> is back.</h1>
                 <p class="mb-4 pb-0">xxth February, RV College of Engineering, Bangalore</p>
                 <a href="https://www.youtube.com/watch?v=1nxCqmBj3u0" class="venobox play-btn mb-4" data-vbtype="video"
                    data-autoplay="true"></a>
                 <a href="#about" class="about-btn scrollto">About The Event</a>
-            </div>
+                        </div>            
                     </div>
                 </div>
 
@@ -246,7 +250,7 @@ Horizontal Scroll  Section
 About Section
 ============================-->
             <section id="aboutMenu">
-                <div class="container">
+                <div class="container" id="aboutMenu">
                     <div class="row">
                         <div class="col-lg-6">
                             <h2>About The Event</h2>
@@ -268,7 +272,7 @@ About Section
 categories(Speakers Section)
 ============================-->
             <section id="eventMenu" class="wow fadeInUp">
-                <div class="container">
+                <div class="container" id="eventMenu">
                     <div class="section-header">
                         <h2>Events</h2>
                         <p>Here are the event categories</p>
@@ -346,7 +350,7 @@ Venue Section
 ============================-->
             <section id="venueMenu" class="wow fadeInUp">
 
-                <div class="container-fluid">
+                <div class="container-fluid" id="venueMenu">
 
                     <div class="section-header">
                         <h2>Event Venue</h2>
@@ -446,9 +450,9 @@ Venue Section
             <!--==========================
 Sponsors Section
 ============================-->
-            <section id="supporters" class="section-with-bg wow fadeInUp">
+            <section id="sponsersMenu" class="section-with-bg wow fadeInUp">
 
-                <div class="container">
+                <div class="container" id="sponsersMenu">
                     <div class="section-header">
                         <h2>Sponsors</h2>
                     </div>
@@ -512,9 +516,9 @@ Sponsors Section
             <!--==========================
 F.A.Q Section
 ============================-->
-            <section id="faq" class="wow fadeInUp">
+            <section id="faqMenu" class="wow fadeInUp">
 
-                <div class="container">
+                <div class="container" id="faqMenu">
 
                     <div class="section-header">
                         <h2>F.A.Q </h2>
@@ -664,7 +668,7 @@ Contact Section
 Footer
 ============================-->
         <footer id="footer">
-            <div class="footer-top">
+            <div class="footer-top" id="footerMenu">
                 <div class="container">
                     <div class="row">
 
@@ -750,6 +754,29 @@ Footer
         <script src="js/main.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/horzontal-slider.js"></script>
+            <script src="js/lottie.js"></script>
+            <script>
+            
+              var animData = {
+        wrapper: document.getElementById('bodymovin'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: '/images/dataSS.json'
+    };
+    
+    var anim;
+                anim = bodymovin.loadAnimation(animData);
+                anim.onComplete = function(){
+                   document.getElementById('bodymovin').classList.add('hideAnimation');
+                    document.getElementById('mainContent').classList.add('showMainContent');    
+                }
+               bodymovin.setQuality(3);
+                setTimeout(()=>{
+                    console.log("Playing")
+                    anim.play();
+                },2000);
+            </script>
     </body>
 
 </html>

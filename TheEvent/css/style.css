@@ -16,6 +16,20 @@ body {
     overflow-x: hidden;
 }
 
+.hideAnimation{
+     opacity: 0;
+    
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.showMainContent{
+    opacity: 1 !important;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+
+
+
 a {
   color: #f82249;
   transition: 0.5s;
@@ -517,7 +531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 90px;
+  top: 40px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -953,27 +967,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 # supporters Section
 --------------------------------------------------------------*/
 
-#supporters {
+#sponsersMenu {
   padding: 60px 0;
   background-color: black;
   background: url("../images/sponsors.jpeg");
   background-position: center;
 }
 
-#supporters h2{
+#sponsersMenu h2{
   color:yellow;
 }
 
-#supporters p{
+#sponsersMenu p{
   color:white;
 }
-#supporters .supporters-wrap {
+#sponsersMenu .supporters-wrap {
   border-top: 1px solid #e0e5fa;
   border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
-#supporters .supporter-logo {
+#sponsersMenu .supporter-logo {
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -991,12 +1005,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 160px;
 }
 
-#supporters .supporter-logo:hover img {
+#sponsersMenu .supporter-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-#supporters img {
+#sponsersMenu img {
   transition: all 0.4s ease-in-out;
 }
 
@@ -1004,29 +1018,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 # F.A.Q Section
 --------------------------------------------------------------*/
 
-#faq {
+#faqMenu {
   padding: 60px 0;
 }
 
-#faq #faq-list {
+#faqMenu #faq-list {
   padding: 0;
   list-style: none;
 }
-#faq h2{
+#faqMenu h2{
   color:yellow;
 }
 
-#faq p{
+#faqMenu p{
   color:white;
 }
 
-#faq #faq-list li {
+#faqMenu #faq-list li {
   border-bottom: 1px solid #ddd;
 }
- #faq #faq-list a :hover{
+ #faqMenu #faq-list a :hover{
   color:#f82249;
 } 
-#faq #faq-list a {
+#faqMenu #faq-list a {
   padding: 18px 0;
   display: block;
   position: relative;
@@ -1038,27 +1052,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#faq #faq-list i {
+#faqMenu #faq-list i {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 16px;
 }
 
-#faq #faq-list p {
+#faqMenu #faq-list p {
   margin-bottom: 20px;
   color:white;
 }
 
-#faq #faq-list a.collapse {
+#faqMenu #faq-list a.collapse {
   color: #f82249;
 }
 
-#faq #faq-list a.collapsed {
+#faqMenu #faq-list a.collapsed {
   color: white;
 }
 
-#faq #faq-list a.collapsed i::before {
+#faqMenu #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
 

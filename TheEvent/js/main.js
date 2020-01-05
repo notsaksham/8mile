@@ -7,9 +7,11 @@ jQuery(document).ready(function( $ ) {
     
      $("div").mouseenter(function(){
    	 var id = $(this).attr('id');
-   	 console.log("Id:"  + id);
-         $('a').removeClass('active');
-   	 $("[href=#"+id+"]").addClass('active');
+        if(id != undefined){
+   	 
+         $('a').parent().removeClass('menu-active');
+      
+   	 $("[href=#"+id+"]").parent().addClass('menu-active');}
    });
     
     
