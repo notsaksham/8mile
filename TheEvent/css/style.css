@@ -703,7 +703,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 60px 10px 40px 10px;
     min-height: 100vh;
 }
 
@@ -743,7 +743,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #eventMenu {
-  padding: 60px 0 30px 0;
+  padding: 60px 10px 30px 10px;
 }
 #eventMenu h2{
   color:yellow;
@@ -848,7 +848,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #venueMenu {
-  padding: 60px 0;
+  padding: 60px 10px 10px 10px;
 }
 #venueMenu h2{
   color:yellow;
@@ -1019,7 +1019,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #faqMenu {
-  padding: 60px 0;
+  padding: 60px 10px 0px 10px;
 }
 
 #faqMenu #faq-list {
@@ -1622,7 +1622,7 @@ padding-top: 10px;
     background-attachment: fixed;
   }
 
-  #about {
+  #aboutMenu {
     background-attachment: fixed;
   }
 
@@ -1695,7 +1695,7 @@ padding-top: 10px;
 }
 
 @media (max-width: 574px) {
-  #venue .venue-info h3 {
+  #venueMenu .venue-info h3 {
     font-size: 24px;
   }
 }
