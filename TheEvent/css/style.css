@@ -704,7 +704,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 10px 40px 10px;
+  padding: 20vh 10px 40px 10px;
     min-height: 100vh;
 }
 
@@ -973,7 +973,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: black;
   background: url("../images/sponsors.jpeg");
   background-position: center;
+  background-size:cover ;
+  
 }
+
 
 #sponsersMenu h2{
   color:yellow;
@@ -1629,6 +1632,7 @@ padding-top: 10px;
   #subscribe input {
     min-width: 400px;
   }
+  
 }
 
 @media (min-width: 768px) {
@@ -1725,6 +1729,34 @@ padding-top: 10px;
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
+  #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #clockdiv > div{
+    padding: 10px;
+    border-radius: 5px;
+    background: #00BF96;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+  }
+  
+  .smalltext{
+    padding-top: 3px;
+    font-size: 15px;
+  }
+  
 }
 
 @media (max-width: 574px) {
