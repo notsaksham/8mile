@@ -903,8 +903,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venueMenu .venue-gallery {
   overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  
 }
 
 #venueMenu .venue-gallery img {
