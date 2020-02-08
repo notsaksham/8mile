@@ -1,183 +1,190 @@
+jQuery(document).ready(function($) {
+  $("div").mouseenter(function() {
+    var id = $(this).attr("id");
+    if (id != undefined) {
+      $("a")
+        .parent()
+        .removeClass("menu-active");
 
-
-
-jQuery(document).ready(function( $ ) {
-
-    
-    
-     $("div").mouseenter(function(){
-   	 var id = $(this).attr('id');
-        if(id != undefined){
-   	 
-         $('a').parent().removeClass('menu-active');
-      
-   	 $("[href=#"+id+"]").parent().addClass('menu-active');}
-   });
-    
-    
-    
-    
-    var c, currentScrollTop = 0,
-       navbar = $('header');
- 
-    
-    
-   $(window).scroll(function () {
-       
-      
-        if ($(this).parents('.nav-menu').length) {
-            console.log("Checking menu");
-          $('.nav-menu .menu-active').removeClass('menu-active');
-          $(this).closest('li').addClass('menu-active');
-        }
-       
-      var a = $(window).scrollTop();
-      var b = navbar.height();
-     
-      currentScrollTop = a;
-     
-      if (c < currentScrollTop && a > b + b && a>500) {
-        navbar.addClass("scrollUp");
-          
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-          
-      }
-      c = currentScrollTop;
+      $("[href=#" + id + "]")
+        .parent()
+        .addClass("menu-active");
+    }
   });
-    
-    
-    
-    
+
+  var c,
+    currentScrollTop = 0,
+    navbar = $("header");
+
+  $(window).scroll(function() {
+    if ($(this).parents(".nav-menu").length) {
+      console.log("Checking menu");
+      $(".nav-menu .menu-active").removeClass("menu-active");
+      $(this)
+        .closest("li")
+        .addClass("menu-active");
+    }
+
+    var a = $(window).scrollTop();
+    var b = navbar.height();
+
+    currentScrollTop = a;
+
+    if (c < currentScrollTop && a > b + b && a > 500) {
+      navbar.addClass("scrollUp");
+    } else if (c > currentScrollTop && !(a <= b)) {
+      navbar.removeClass("scrollUp");
+    }
+    c = currentScrollTop;
+  });
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
+      $(".back-to-top").fadeIn("slow");
     } else {
-      $('.back-to-top').fadeOut('slow');
+      $(".back-to-top").fadeOut("slow");
     }
   });
-    
-    
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+
+  $(".back-to-top").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
     return false;
   });
 
   // Header fixed on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-    $('#mainLogo').addClass('logo-scrolled');
-        $('#mainLogo').removeClass('myLogo-top');
+      $("#header").addClass("header-scrolled");
+      $("#mainLogo").addClass("logo-scrolled");
+      $("#mainLogo").removeClass("myLogo-top");
     } else {
-      $('#header').removeClass('header-scrolled');
-    $('#mainLogo').removeClass('logo-scrolled');
-         $('#mainLogo').addClass('myLogo-top');
+      $("#header").removeClass("header-scrolled");
+      $("#mainLogo").removeClass("logo-scrolled");
+      $("#mainLogo").addClass("myLogo-top");
     }
   });
 
   if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-  
+    $("#header").addClass("header-scrolled");
   }
 
   // Real view height for mobile devices
   if (window.matchMedia("(max-width: 767px)").matches) {
-    $('#intro').css({ height: $(window).height() });
+    $("#intro").css({ height: $(window).height() });
   }
 
   // Initiate the wowjs animation library
   new WOW().init();
-    
 
   // Initialize Venobox
-  $('.venobox').venobox({
-    bgcolor: '',
-    overlayColor: 'rgba(6, 12, 34, 0.85)',
-    closeBackground: '',
-    closeColor: '#fff'
+  $(".venobox").venobox({
+    bgcolor: "",
+    overlayColor: "rgba(6, 12, 34, 0.85)",
+    closeBackground: "",
+    closeColor: "#fff"
   });
 
   // Initiate superfish on nav menu
-  $('.nav-menu').superfish({
+  $(".nav-menu").superfish({
     animation: {
-      opacity: 'show'
+      opacity: "show"
     },
     speed: 400
   });
 
   // Mobile Navigation
-  if ($('#nav-menu-container').length) {
-      console.log("Mobile NAV!")
-    var $mobile_nav = $('#nav-menu-container').clone().prop({
-      id: 'mobile-nav'
+  if ($("#nav-menu-container").length) {
+    console.log("Mobile NAV!");
+    var $mobile_nav = $("#nav-menu-container")
+      .clone()
+      .prop({
+        id: "mobile-nav"
+      });
+    $mobile_nav.find("> ul").attr({
+      class: "",
+      id: ""
     });
-    $mobile_nav.find('> ul').attr({
-      'class': '',
-      'id': ''
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
-    $('body').append('<div id="mobile-body-overly"></div>');
-    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+    $("body").append($mobile_nav);
+    $("body").prepend(
+      '<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>'
+    );
+    $("body").append('<div id="mobile-body-overly"></div>');
+    $("#mobile-nav")
+      .find(".menu-has-children")
+      .prepend('<i class="fa fa-chevron-down"></i>');
 
-    $(document).on('click', '.menu-has-children i', function(e) {
-      $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
+    $(document).on("click", ".menu-has-children i", function(e) {
+      $(this)
+        .next()
+        .toggleClass("menu-item-active");
+      $(this)
+        .nextAll("ul")
+        .eq(0)
+        .slideToggle();
       $(this).toggleClass("fa-chevron-up fa-chevron-down");
     });
 
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-      $('#mobile-body-overly').toggle();
+    $(document).on("click", "#mobile-nav-toggle", function(e) {
+      $("body").toggleClass("mobile-nav-active");
+      $("#mobile-nav-toggle i").toggleClass("fa-times fa-bars");
+      $("#mobile-body-overly").toggle();
     });
 
     $(document).click(function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
+        if ($("body").hasClass("mobile-nav-active")) {
+          $("body").removeClass("mobile-nav-active");
+          $("#mobile-nav-toggle i").toggleClass("fa-times fa-bars");
+          $("#mobile-body-overly").fadeOut();
         }
       }
     });
   } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
-      console.log("No nav");
+    console.log("No nav");
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  $(".nav-menu a, #mobile-nav a, .scrollto").on("click", function() {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
 
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
+        if ($("#header").length) {
+          top_space = $("#header").outerHeight();
 
-          if( ! $('#header').hasClass('header-fixed') ) {
+          if (!$("#header").hasClass("header-fixed")) {
             top_space = top_space - 20;
           }
         }
 
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - top_space
+          },
+          1500,
+          "easeInOutExpo"
+        );
 
-        if ($(this).parents('.nav-menu').length) {
-            console.log("Checking menu");
-          $('.nav-menu .menu-active').removeClass('menu-active');
-          $(this).closest('li').addClass('menu-active');
+        if ($(this).parents(".nav-menu").length) {
+          console.log("Checking menu");
+          $(".nav-menu .menu-active").removeClass("menu-active");
+          $(this)
+            .closest("li")
+            .addClass("menu-active");
         }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
+        if ($("body").hasClass("mobile-nav-active")) {
+          $("body").removeClass("mobile-nav-active");
+          $("#mobile-nav-toggle i").toggleClass("fa-times fa-bars");
+          $("#mobile-body-overly").fadeOut();
         }
         return false;
       }
@@ -189,19 +196,22 @@ jQuery(document).ready(function( $ ) {
     autoplay: true,
     dots: true,
     loop: true,
-    center:true,
-    responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
+    center: true,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 3 },
+      992: { items: 4 },
+      1200: { items: 5 }
     }
   });
 
   // Buy tickets select the ticket type on click
-  $('#buy-ticket-modal').on('show.bs.modal', function (event) {
+  $("#buy-ticket-modal").on("show.bs.modal", function(event) {
     var button = $(event.relatedTarget);
-    var ticketType = button.data('ticket-type');
+    var ticketType = button.data("ticket-type");
     var modal = $(this);
-    modal.find('#ticket-type').val(ticketType);
-  })
+    modal.find("#ticket-type").val(ticketType);
+  });
 
-// custom code
-
+  // custom code
 });

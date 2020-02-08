@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--Header
+============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="assets/logo.png" class="myLogo-top" alt="" title=""
+            id="mainLogo"></a> </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#speakers">Attractions</a></li>
+          <li><a href="index.html#venue">Venue</a></li>
+          <li><a href="index.html#supporters">Sponsors</a></li>
+          <li><a href="index.html#footer">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <main id="main" class="main-page">
+
+    <!--==========================
+    Speaker Details Section
+  ============================-->
+    <section id="speakers-details" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tech events</h2>
+          <p>Bring out the geek within</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+
+          <div class="item">
+            <div class="card carCard">
+              <div class="card-body">
+                <div id="car-card-title" style="font-size: 30px; ">Hack 59</div>
+                <p class="card-text" style="color: black !important;">
+                  Overnight coding event, the hack should be built on
+                  the concept (topic) which will be provided for the
+                  teams on spot.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="item">
+            <div class="card carCard">
+              <div class="card-body">
+                <div id="car-card-title" style="font-size: 30px; ">Business Marathon</div>
+                <p class="card-text" style="color: black !important;">
+                  It is an overnight event of ideating over a business
+                  model and an entrepreneurship idea.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card carcard">
+
+              <div class="card-body">
+                <div id="car-card-title" style="font-size: 30px; ">Stock Market
+                  Competition</div>
+                <p class="card-text" style="color: black !important;">
+                  A real time trading simulation platform the way it
+                  happens in real world.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="card carcard">
+
+              <div class="card-body">
+                <div id="car-card-title" style="font-size: 30px; ">Finding Sherlock</div>
+                <p class="card-text" style="color: black !important;">
+                  This is a capture the flag event with theme based
+                  on Sherlock. Participant needs to find the secret
+                  keys hidden in each level of the game. This is a
+                  tehnical event and the team with maximum keys
+                  wins.
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+      
+      <!--========================== Button code ==========================-->
+      <div class="wrapper">
+          <a class="button" href="https://www.thecollegefever.com/events/8th-mile-2020-rvce">Buy Tickets</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!--==========================
+Footer
+============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+<<<<<<< HEAD
+        <div class="row">
+=======
+        
+          <div class="row">
+>>>>>>> bb9752a9973990fa37ab8cdc5dce033f05f6426b
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/logo.png" alt="TheEvenet">
+            <p>To register for any event as a prticaipant or an organizer, you can contact any of the 4 convenors on
+              their details , or just send us an email or a message on any of the social media links.</p>
+          </div>
+
+
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              R.V.College of Engineering <br>
+              Mysore Road, Bengaluru 560059<br>
+              India <br>
+              <strong>Phone:</strong> +91 9999999999<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="credits">
+        Designed by <a href="https://www.facebook.com/codingclubrvce/">CodingClub,RVCE</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <script>
+
+    $('.owl-carousel').owlCarousel({
+      loop: false,
+      margin: 10,
+      center: true,
+
+      nav: true,
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

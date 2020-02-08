@@ -61,21 +61,6 @@ h6 {
   color: #0e1b4d;
 }
 
-.owl-prev, .owl-next {
-  width: 15px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block !important;
-  border:0px solid black;
-}
-.owl-prev { left: -20px; }
-.owl-next { right: -20px; }
-.owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
-.carcard{
-  margin: 20px; min-height:50%; max-height: 50%;
-}
 
 div#car-card-title{
   font-family: "Raleway", sans-serif !important;
@@ -1896,8 +1881,9 @@ padding-top: 10px;
 /* Buy Ticket Button */
 .wrapper {
     text-align: center;
+    margin: 25px;
 }
-.button {
+.buyButton {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -1916,8 +1902,8 @@ padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
 }
-.button:hover,
-.button:focus {
+.buyButton:hover,
+.buyButton:focus {
     border: 1px solid ##342394;
     background: #ff7a2a;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff7a2a), to(#000a71));
@@ -1926,13 +1912,13 @@ padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
 }
-.button:active {
+.buyButton:active {
     background: #943d15;
     background: -webkit-gradient(linear, left top, left bottom, from(#943d15), to(#00085e));
     background: -moz-linear-gradient(top, #943d15, #00085e);
     background: linear-gradient(to bottom, #943d15, #00085e);
 }
-.button:before{
+.buyButton:before{
     content:  "\0000a0";
     display: inline-block;
     height: 24px;
