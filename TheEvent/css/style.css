@@ -1893,3 +1893,55 @@ padding-top: 10px;
   visibility: visible;
   opacity: 1;
 }
+/* Buy Ticket Button */
+.wrapper {
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #2c1e7e;
+    border-radius: 15px;
+    background: #f76623;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f76623), to(#00085e));
+    background: -moz-linear-gradient(top, #f76623, #00085e);
+    background: linear-gradient(to bottom, #f76623, #00085e);
+    -webkit-box-shadow: #6443ff 0px 0px 40px 0px;
+    -moz-box-shadow: #6443ff 0px 0px 40px 0px;
+    box-shadow: #6443ff 0px 0px 40px 0px;
+    text-shadow: #1a124a 1px 1px 1px;
+    font: normal normal bold 23px georgia;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid ##342394;
+    background: #ff7a2a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff7a2a), to(#000a71));
+    background: -moz-linear-gradient(top, #ff7a2a, #000a71);
+    background: linear-gradient(to bottom, #ff7a2a, #000a71);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #943d15;
+    background: -webkit-gradient(linear, left top, left bottom, from(#943d15), to(#00085e));
+    background: -moz-linear-gradient(top, #943d15, #00085e);
+    background: linear-gradient(to bottom, #943d15, #00085e);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADLElEQVRIiaWWS24bRxCGv2rSIsURScm2SJtjEgFiS5ChhQPYMHwHb3OArHyIHCDH8AGy9SqLZBNkET9k2IaQFxSFj6GgCIwsxTRJcbqymGnOiBrFctJAYwo11fV3/VVd3QIYMka/HdxW0c9BFiKNPm40/d8AgnbvJiJfxKYTUf36esvfzvIjMYBNA+11ekaRjsK1lOGuqn4FWIQvQT5xDoA9QZvXmv405ccCJg3ghgk6wRKqb0Wi5apKIoNIpANJZJFqo9n4O+XLADafFZaiSPxFE91M1pTlTKdu125YAAcwnwcryD7KMKZpR9AWIgPQBVSKiO6j0kLoApcVtRl+TvE1QxdkqrCtwg/AAHgC7Cv8qPAKaKvyjcKRqn6rqjuCTDN82awcEHSCCqpviYlysE7O0ipU/ZZ/bg7OhOaS+tfhIcVCkeFwCAK5XB5VJQynWGuprdZcJc2zAmAcgJ03cJXT7XUpFIpMxmPEGHI5gzE5jo+P8Rs+uAiSzH+wimZgqrB5e5OgH+CVPIwxiAiTyRivVKJeq6VLKnOY1Dc9EYlqXETwPI8wDFG1jEbvOZlO8UpeRKNIbCvM+boYRQpUK1WWq8tRYlN6nZM/nqLY4cHBAUz+5EblHQDdIw8Kq1y9ctWdYhfBuQctTRdoUkW9fkBt+xmXx1uU7kS7XHgpDIqfEWzcnSXaRhGcqcY0QBKaJOFf6r+mtPWUkTGEn94B4OTnl5TCpyysFKHhn+pVH01Rq75L8Z7h6MpDJuv3AMhNb1A5eEKz9jvvXfebW3thipYuTcjdMrB6K9nl2hqFFUM+f8Io1p1HUVqR9BBJquJwVGC4FSLPX4BqRMeL5wy3Qg5H0V2UQdGsF32Qou5gg+ZPHQzfUSrvADD6/g9GQNffoN76nxSJv87gwRjfPmNxpRvp7nv0zF3EX5/Z/ecqqq/WOVq8z6/v1vGrUUfu5fIsesvUlirnUeTALnDQUMpLZcrlCidxXmpF3L0ZtaJ/oehUa3XToEMR2RNI95ldQR4hPEJkN/1PYM+gQ872tOxLH7D9drCZfrYIPL7ebPwCELSDNYT5Z8ubOV8GsP8A03uJzvjZWk8AAAAASUVORK5CYII=") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
