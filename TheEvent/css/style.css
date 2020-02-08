@@ -61,6 +61,30 @@ h6 {
   color: #0e1b4d;
 }
 
+.owl-prev, .owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  border:0px solid black;
+}
+.owl-prev { left: -20px; }
+.owl-next { right: -20px; }
+.owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
+.carcard{
+  margin: 20px; min-height:50%; max-height: 50%;
+}
+
+div#car-card-title{
+  font-family: "Raleway", sans-serif !important;
+  color: yellow;
+  font-size: 500px;
+  font-weight: 400; 
+}
+
+
 .main-page {
   margin-top: 70px;
 }
