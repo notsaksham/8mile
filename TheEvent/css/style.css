@@ -1516,8 +1516,10 @@ padding-top: 10px;
 .slider-pagination {
   position: absolute;
   bottom: 30px;
-  width: 575px;
-  left: 100px;
+  
+  
+  left: 50%;
+  margin-left: -73px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -1614,14 +1616,15 @@ padding-top: 10px;
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: #00BF96;
+  border: solid yellow 1px;
+  
 	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: #00816A;
+	border: solid yellow 1px;
 	display: inline-block;
 }
 
