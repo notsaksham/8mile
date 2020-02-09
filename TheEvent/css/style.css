@@ -27,6 +27,20 @@ body {
     transition: visibility 0s 2s, opacity 2s linear;
 }
 
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -2rem;
+}
+
+.owl-next {
+  right: -2rem;
+}
 
 
 
