@@ -31,7 +31,7 @@ body {
 
 
 a {
-  color: #f82249;
+  color: yellow;
   transition: 0.5s;
 }
 
@@ -202,7 +202,7 @@ box-sizing: content-box !important;
 }
 
 #header #logo h1 span {
-  color: #f82249;
+  color: yellow;
 }
 
 #header #logo h1 a,
@@ -391,7 +391,7 @@ box-sizing: content-box !important;
 }
 
 .nav-menu ul li:hover > a {
-  background: #f82249;
+  background: yellow;
   color: #fff;
 }
 
@@ -464,7 +464,7 @@ box-sizing: content-box !important;
 }
 
 #mobile-nav ul li a:hover {
-  color: #f82249;
+  color: yellow;
 }
 
 #mobile-nav ul li li {
@@ -481,11 +481,11 @@ box-sizing: content-box !important;
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #f82249;
+  color: yellow;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #f82249;
+  color: yellow;
 }
 
 #mobile-body-overly {
@@ -628,7 +628,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::after {
-  border-left: 15px solid #f82249;
+  border-left: 15px solid yellow;
   -webkit-transform: scale(20);
   transform: scale(20);
 }
@@ -802,7 +802,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #eventMenu .speaker .details a:hover {
-  color: #f82249;
+  color: yellow;
 }
 
 #eventMenu .speaker:hover .details {
@@ -837,7 +837,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details .social a:hover {
-  background: #f82249;
+  background: yellow;
   color: #fff;
 }
 
@@ -956,7 +956,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #home .owl-dot.active {
-  background-color: #f82249;
+  background-color: yellow;
 }
 
 #home .gallery-carousel .owl-stage-outer {
@@ -964,7 +964,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #home .gallery-carousel .center {
-  border: 6px solid #f82249;
+  border: 6px solid yellow;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
@@ -1050,7 +1050,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-bottom: 1px solid #ddd;
 }
  #faqMenu #faq-list a :hover{
-  color:#f82249;
+  color:yellow;
 } 
 #faqMenu #faq-list a {
   padding: 18px 0;
@@ -1077,7 +1077,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faqMenu #faq-list a.collapse {
-  color: #f82249;
+  color: yellow;
 }
 
 #faqMenu #faq-list a.collapsed {
@@ -1124,7 +1124,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #f82249;
+  color: yellow;
 }
 
 #contact .contact-info address,
@@ -1146,7 +1146,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: yellow;
 }
 
 #contact .contact-address,
@@ -1156,8 +1156,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #f82249;
-  border: 1px solid #f82249;
+  color: yellow;
+  border: 1px solid yellow;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1198,7 +1198,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #f82249;
+  background: yellow;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1270,7 +1270,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: yellow;
   color: #fff;
 }
 
@@ -1281,7 +1281,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid yellow;
 }
 
 #footer .footer-top .footer-links {
@@ -1296,7 +1296,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: yellow;
   font-size: 18px;
 }
 
@@ -1314,7 +1314,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: yellow;
 }
 
 #footer .footer-top .footer-contact {
@@ -1336,7 +1336,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #f82249;
+  background: yellow;
   border: 0;
   width: 35%;
   padding: 6px 0;
