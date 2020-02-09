@@ -580,7 +580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#07e2b8 50%, rgb(3, 181, 133) 99%);
+  background: white;
   border-radius: 50%;
   display: block;
   position: relative;
@@ -599,7 +599,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid black;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -713,8 +713,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 20vh 10px 40px 10px;
-    min-height: 100vh;
+  padding: 8vh 10px 40px 10px;
+    
 }
 
 #aboutMenu:before {
@@ -1643,6 +1643,8 @@ padding-top: 10px;
   #subscribe input {
     min-width: 400px;
   }
+
+  
   
 }
 
@@ -1652,6 +1654,10 @@ padding-top: 10px;
   #contact .contact-email {
     padding: 20px 0;
   }
+  
+  
+ 
+
 
   #contact .contact-phone {
     border-left: 1px solid #ddd;
@@ -1663,6 +1669,10 @@ padding-top: 10px;
   #schedule .sub-heading {
     width: 75%;
   }
+
+
+  
+  
 }
 
 @media (min-width: 1024px) {
@@ -1682,6 +1692,13 @@ padding-top: 10px;
 @media (max-width: 1199px) {
   #header .container {
     max-width: 100%;
+  }
+  #intro .play-btn{
+    width: 60px;
+    height: 60px;
+  }
+  #intro .about-btn {
+    font-size: 10px;
   }
 
   .nav-menu a {
@@ -1752,14 +1769,14 @@ padding-top: 10px;
   #clockdiv > div{
     padding: 10px;
     border-radius: 5px;
-    background: #00BF96;
+    border: solid yellow 1px;
     display: inline-block;
   }
   
   #clockdiv div > span{
     padding: 10px;
     border-radius: 3px;
-    background: #00816A;
+    border: solid yellow 1px;
     display: inline-block;
   }
   
