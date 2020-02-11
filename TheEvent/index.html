@@ -1,4 +1,4 @@
-    <!-- =======================================================
+<!-- =======================================================
 8th Mile, 2020
 v1
 
@@ -10,6 +10,51 @@ Theme Name: TheEvent
 Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
+          oooooooo                        oo  o        
+                   osyyhhhhhhhhhhhysso                         
+                oyhhhhhhhhhhhhhhhhhhhhyso       o   
+              syhhhhyysssssssyyyhhhhhhhhhyo       o                   
+            oyhyso   ///////     osyhhhhhhhyo                         
+           syso /////////////////    syyyyyyyoo      o                
+          ss  //////                   oyyyyyyoo     oo               
+         oo ////                         oyyyyyoooooooo               
+                                          oyyyysoooooooo              
+                                            yssy ooooooo              
+        ooooo                               osssooooooooo             
+       ooooo                                 sssooooooooo             
+       ooooo                                 oss ooooooo              
+       ossso                                 oso ooooooo              
+        ssso                                 oo ooooooo               
+        oyyo                                 s  oooooo                
+         sys                                   oooooo                 
+          oyo                                ooooooo                  
+            so                              oooooo                    
+                                          oooooo                      
+                                        oooooo                        
+                                     ooooo                            
+                       ooooooooooooooo                                
+                   ooooooooooooooo ooo o       o   o                  
+                ooooooooooo                       oo                  
+             oooooooooo          oo     o      o  oo       oo         
+            ooooooooo oso      o    oo    o    o  oo    oo    oo      
+          ooooooooo oyy        o    oo    s    o  oo   ooooooooo      
+         ooooooooooyhy        oo    oo    s    o   o    o             
+        oooooooooohhy          o    oo    s    o   oo     oooo        
+        ooooooooshhho                                                 
+       oooooooooyyyy                                                  
+       ooooooooyyyys                                   /              
+       ooooooooyyyys                                                  
+       ooooooooyyyys                                                  
+       ooooooooyyyyy                                 ooo              
+        oooooooyyyyys  oo                           oooo              
+        oo    osssssss  oso                       ossss               
+         o    oosssssss  ossoo                 ossssss                
+          o    oossssssso  syyysoo        oossyyyyyyo                 
+                  ossssssso osyyyyyyyyyyyyyyyyyyyys                   
+                   ossssssssoo osyyyyyyyyyyyyyyso                     
+                     ooooooooosooooosssosssssooo                      
+                        ooooooooooooooooooooo                         
+       o            oooooooooossssssssssooo                                                           
 ======================================================= -->
 
 
@@ -213,7 +258,7 @@ Horizontal Scroll  Section
 About Section
 ============================-->
             <section id="aboutMenu">
-                <div class="container" id="aboutMenu">
+                <div id="buyb" class="container" id="aboutMenu">
                     <div class="row">
                         <div class="col-lg-6">
                             <h2>About The Event</h2>
@@ -336,7 +381,7 @@ Venue Section
                         <p>Event venue location info and gallery</p>
 
 
-                        <div class="row no-gutters" style="margin-top: 50px;">
+                        <div class="row no-gutters">
                             <div class="col-lg-6 venue-map">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.00375825016!2d77.4987012!3d12.9237228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75a3463d510cf26e!2sRV%20College%20of%20Engineering%C2%AE!5e0!3m2!1sen!2sin!4v1578179526861!5m2!1sen!2sin"
@@ -531,7 +576,7 @@ Sponsors Section
                                 <img src="img/supporters/17.png" class="img-fluid" alt="">
                             </div>
                         </div>
-                     
+
                         <div class="col-lg-3 col-md-4 col-xs-6">
                             <div class="supporter-logo">
                                 <img src="img/supporters/20.png" class="img-fluid" alt="">
@@ -625,19 +670,23 @@ Footer
                     <br>
                     Visit us at <a href="https://www.facebook.com/codingclubrvce/">CodingClub,RVCE</a>
                     <br>
-                    
+
+
                     <!-- Start of WebFreeCounter Code -->
-<a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gexcxnx&nd=6&style=1" border="0" alt="web counter"></a>
-<!-- End of WebFreeCounter Code -->
+                    <a href="https://www.webfreecounter.com/" target="_blank"><img
+                            src="https://www.webfreecounter.com/hit.php?id=gexcxnx&nd=6&style=1" alt="web counter"></a>
+                    <!-- End of WebFreeCounter Code -->
                 </div>
+
             </div>
+        </div>
         </div>
     </footer><!-- #footer -->
 
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JavaScript Libraries -->
-    <!--        <script src="lib/jquery/jquery.min.js"></script>-->
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -658,11 +707,29 @@ Footer
 
     <script src="js/timer.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
+
     <script src="js/horzontal-slider.js"></script>
     <script src="js/lottie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="js/slider.js"></script>
     <script>
+        var el = document.getElementById('buyb')
+        console.log(el)
 
+        $(function () {
+            $("#home").swipe({
+
+                allowPageScroll: "vertical",
+                swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                    console.log("Swiped in index")
+                    handleSwipe(direction);
+
+                }
+            });
+
+
+            $("#test1").swipe({ fingers: 2, });
+        });
         var animData = {
             wrapper: document.getElementById('bodymovin'),
             renderer: 'svg',
@@ -677,7 +744,7 @@ Footer
             document.getElementById('bodymovin').classList.add('hideAnimation');
             document.getElementById('mainContent').classList.add('showMainContent');
         }
-        //               bodymovin.setQuality(3);
+
         setTimeout(() => {
             console.log("Playing")
             anim.play();

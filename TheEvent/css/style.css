@@ -991,6 +991,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #sponsersMenu {
+  margin: 10px;
   padding: 60px 0;
   background-color: black;
   background: url("../images/sponsors.jpeg");
@@ -1011,6 +1012,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-top: 1px solid #e0e5fa;
   border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
+  margin: 50px 10px 10px 10px;
 }
 
 #sponsersMenu .supporter-logo {
