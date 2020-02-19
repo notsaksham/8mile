@@ -16,6 +16,17 @@ body {
     overflow-x: hidden;
 }
 
+.sliderpromo{
+  width: 30%;
+                        height: auto;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+}
+
 .hideAnimation{
      opacity: 0;
     
@@ -1661,7 +1672,6 @@ padding-top: 10px;
   }
 
   
-  
 }
 
 @media (min-width: 768px) {
@@ -1767,6 +1777,16 @@ padding-top: 10px;
   #faq #faq-list i {
     top: 13px;
   }
+
+  
+  .sliderpromo{
+    width: 75%;
+  }
+  
+  .sliderpromo{
+    width: 75%;
+  }
+  
 }
 
 @media (max-width: 767px) {
