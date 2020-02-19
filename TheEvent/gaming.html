@@ -85,6 +85,7 @@ License: https://bootstrapmade.com/license/
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/ribbon.css" rel="stylesheet">
   <link href="css/owl.carousel.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <!-- =======================================================
@@ -217,9 +218,18 @@ Footer
 
     gaming.forEach((x) => {
 
-      $('.owl-carousel').owlCarousel().trigger('add.owl.carousel',
-        [jQuery('<div class="owl-item">' + a + x[0] + b + x[1] + c + x[2] + d + x[3] + e + x[4] + f +
-          '</div>')]).trigger('refresh.owl.carousel');
+      if (x.length == 6) {
+
+        $('.owl-carousel').owlCarousel().trigger('add.owl.carousel',
+          [jQuery('<div class="owl-item">' + '<div class="ribbon ribbon-top-right"><span>Flagship</span></div>' + a + x[0] + b + x[1] + c + x[2] + d + x[3] + e + x[4] + f +
+            '</div>')]).trigger('refresh.owl.carousel');
+      }
+      else {
+        $('.owl-carousel').owlCarousel().trigger('add.owl.carousel',
+          [jQuery('<div class="owl-item">' + a + x[0] + b + x[1] + c + x[2] + d + x[3] + e + x[4] + f +
+            '</div>')]).trigger('refresh.owl.carousel');
+
+      }
 
 
     })

@@ -1002,8 +1002,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #sponsersMenu {
-  margin: 10px;
-  padding: 60px 0;
+  
+  padding: 60px;
   background-color: black;
   background: url("../images/sponsors.jpeg");
   background-position: center;
@@ -1783,9 +1783,7 @@ padding-top: 10px;
     width: 75%;
   }
   
-  .sliderpromo{
-    width: 75%;
-  }
+  
   
 }
 
