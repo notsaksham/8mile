@@ -15,7 +15,39 @@ body {
   font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
 }
+body .modal-dialog { /* Width */
+  max-width: 100%;
+  width: auto !important;
+  display: inline-block;
+}
 
+.modal {
+  z-index: -1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.popup-img{
+  height:80vh;
+}
+
+.modal-open .modal {
+   z-index: 1050;
+}
+#myModal > div > div{
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+#myModal > div > div > div.modal-header{
+  border-bottom: 0;
+}
+
+#myModal > div > div > div.modal-header > button{
+  color: yellow;
+}
 .sliderpromo{
   width: 30%;
                         height: auto;
@@ -1552,8 +1584,8 @@ padding-top: 10px;
   align-items: center;
 }
 .slider-pagination label {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   display: inline-block;
   background: #fff;
@@ -1578,8 +1610,8 @@ padding-top: 10px;
 .slide-radio3:checked ~ .slider-pagination .page3,
 .slide-radio4:checked ~ .slider-pagination .page4,
 .slide-radio5:checked ~ .slider-pagination .page5 {
-  width: 25px;
-  height: 25px;
+  width: 12px;
+  height: 12px;
   border: 2px solid #ffff00;
     border-style: dashed;
   background: transparent;
@@ -1788,6 +1820,9 @@ padding-top: 10px;
 }
 
 @media (max-width: 767px) {
+  .popup-img{
+    height:70vh;
+  }
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }

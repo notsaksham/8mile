@@ -93,6 +93,34 @@ License: https://bootstrapmade.com/license/
 
 <body>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body" style="text-align: center; padding-right: 10px;">
+
+                    <img class="popup-img" src="assets/slider/LocalTrain_LowRes.png" alt="popup">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="popup">
+
+        <!-- Now this is the button which closes the popup-->
+
+
+        <!-- and finally we close the POPUP FRAME-->
+        <!-- everything on it will show up within the popup so you can add more things not just an image -->
+    </div>
     <!--==========================
 Header
 ============================-->
@@ -162,7 +190,7 @@ Gallery Section
             <div class="slider slide-2">
                 <div class="slider-img"
                     style="text-align: center; vertical-align:top; position: relative; display: inline-block; background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(assets/slider/3.jpg) top center;">
-                    <img src="images/coliseum.jpeg" class="sliderpromo">
+                    <img src="assets/slider/LocalTrain.png" class="sliderpromo">
 
                 </div>
 
@@ -177,15 +205,14 @@ Gallery Section
             <!-- Slider #3 -->
             <div class="slider slide-3">
                 <div class="slider-img"
-                    style="text-align: center; background: linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 75%, rgba(0,0,0, 1) 100%),   url('assets/slider/OP2.jpg') top center;">
-                </div>
+                    style="text-align: center; vertical-align:top; position: relative; display: inline-block; background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(130, 195, 55, 0.8)), url(assets/slider/3.jpg) top center;">
+                    <img src="images/coliseum.jpeg" class="sliderpromo">
 
+                </div>
                 <div class="slider-content">
 
                 </div>
-                <div class="number-pagination">
-                    <span>3</span>
-                </div>
+
             </div>
 
             <!-- Slider #4 -->
@@ -197,24 +224,20 @@ Gallery Section
                 <div class="slider-content">
 
                 </div>
-                <div class="number-pagination">
-                    <span>4</span>
-                </div>
+
             </div>
 
 
 
             <div class="slider slide-5">
                 <div class="slider-img"
-                    style="background: linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 75%, rgba(0,0,0, 1) 100%),   url('assets/slider/1.JPG') top center;">
+                    style="background: linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(7, 250, 47, 0) 35%, rgba(255,255,255,0) 75%, rgba(0,0,0, 1) 100%),   url('assets/slider/1.JPG') top center;">
                 </div>
 
                 <div class="slider-content">
 
                 </div>
-                <div class="number-pagination">
-                    <span>4</span>
-                </div>
+
             </div>
         </div>
 
@@ -685,8 +708,8 @@ Footer
 
 
                     <!-- Start of WebFreeCounter Code -->
-                    <a href="https://www.webfreecounter.com/" target="_blank"><img
-                            src="https://www.webfreecounter.com/hit.php?id=gexcxnx&nd=6&style=1" alt="web counter"></a>
+                    <!-- <a href="https://www.webfreecounter.com/" target="_blank"><img
+                            src="https://www.webfreecounter.com/hit.php?id=gexcxnx&nd=6&style=1" alt="web counter"></a> -->
                     <!-- End of WebFreeCounter Code -->
                 </div>
 
@@ -698,6 +721,9 @@ Footer
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JavaScript Libraries -->
+
+
+
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -724,7 +750,13 @@ Footer
     <script src="js/lottie.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="js/slider.js"></script>
+
+
+
+
+
     <script>
+
         var el = document.getElementById('buyb')
         console.log(el)
 
@@ -755,6 +787,11 @@ Footer
         anim.onComplete = function () {
             document.getElementById('bodymovin').classList.add('hideAnimation');
             document.getElementById('mainContent').classList.add('showMainContent');
+            setTimeout(function () {
+
+                $("#myModal").modal()
+
+            }, 2000);
         }
 
         setTimeout(() => {
