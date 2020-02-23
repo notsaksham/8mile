@@ -21,6 +21,10 @@ body .modal-dialog { /* Width */
   display: inline-block;
 }
 
+ol{
+  padding-left: 10px;
+}
+
 .modal {
   z-index: -1;
   display: flex !important;
@@ -28,6 +32,11 @@ body .modal-dialog { /* Width */
   align-items: center;
 
   
+}
+
+#eventCard {
+  border-radius: 0 !important;
+
 }
 
 .popup-img{
