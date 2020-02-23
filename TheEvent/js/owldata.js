@@ -348,14 +348,14 @@ var informal = [
 ];
 
 var tech = [
-  [
-    "Hack 59",
-    "Overnight coding event; the hack should be built on the concept(topic) which will be provided to the teams on spot.",
-    "<b> TEAM SIZE: </b>4 - 6 per Team",
-    "<b> Registration: </b> Rs2000/team",
-    "<b> Prize Money: </b> ....",
-    "Flagship"
-  ],
+  // [
+  //   "Hack 59",
+  //   "Overnight coding event; the hack should be built on the concept(topic) which will be provided to the teams on spot.",
+  //   "<b> TEAM SIZE: </b>4 - 6 per Team",
+  //   "<b> Registration: </b> Rs2000/team",
+  //   "<b> Prize Money: </b> ....",
+  //   "Flagship"
+  // ],
   [
     "Business Marathon",
     "It is an overnight event consisting of ideating over a business model and coming up with an entrepreneurship idea.",
