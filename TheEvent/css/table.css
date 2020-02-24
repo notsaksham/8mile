@@ -1,0 +1,25 @@
+table, th, td{
+    border: 1px solid white;
+    empty-cells: hide;
+    color: white;
+   
+  }
+
+table{
+    border-collapse: unset;
+    border-spacing: 10px;
+    padding: 5px;
+}
+
+td, th{
+    width: 200px;
+    margin: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
+}
+
+td{
+     
+    color: black;
+   
+    background: yellow;
+}
