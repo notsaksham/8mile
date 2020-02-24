@@ -3,16 +3,20 @@ table, th, td{
     empty-cells: hide;
     color: white;
    
+   
   }
 
 table{
     border-collapse: unset;
     border-spacing: 10px;
     padding: 5px;
+   
+   
+  
 }
 
 td, th{
-    width: 200px;
+    width: 150px;
     margin: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
 }
@@ -22,4 +26,13 @@ td{
     color: black;
    
     background: yellow;
+}
+
+@media (max-width: 767px) {
+
+table{
+    display: block;
+    overflow: auto;
+}
+
 }
