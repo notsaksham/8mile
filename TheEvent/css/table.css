@@ -1,5 +1,5 @@
 table, th, td{
-    border: 1px solid white;
+   
     empty-cells: hide;
     color: white;
    
@@ -15,17 +15,40 @@ table{
   
 }
 
+.header > *{
+    position: sticky;
+    top: 0;
+    background: white;
+    color: black;
+}
+
 td, th{
     width: 150px;
     margin: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
+   
 }
 
 td{
-     
+  
     color: black;
    
     background: yellow;
+}
+
+.eventname{
+    border-radius: 5px;
+    background: orange !important; 
+}
+
+.eventdetails{
+    border-radius: 5px;
+    background: orange !important; 
+}
+
+
+h1{
+    color: white;
 }
 
 @media (max-width: 767px) {
