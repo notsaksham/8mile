@@ -1,66 +1,60 @@
-table, th, td{
-   
-    empty-cells: hide;
-    color: white;
-   
-   
-  }
-
-table{
-    border-collapse: unset;
-    border-spacing: 10px;
-    padding: 5px;
-   
-   
-  
+table,
+th,
+td {
+  empty-cells: hide;
+  color: white;
 }
 
-.header > *{
-   
-    position: sticky;
-position: -webkit-sticky;
-position: -moz-sticky;
-position: -o-sticky;
-position: -ms-sticky;
-    top: 0;
-    background: white;
-    color: black;
+table {
+  border-collapse: unset;
+  border-spacing: 10px;
+  padding: 5px;
+  overflow: auto;
+  height: 500px;
+  display: block;
 }
 
-td, th{
-    width: 150px;
-    margin: 12px 12px 12px 12px;
-    padding: 12px 12px 12px 12px;
-   
+.header > * {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  top: 0;
+  background: white;
+  color: black;
 }
 
-td{
-  
-    color: black;
-   
-    background: yellow;
+td,
+th {
+  width: 150px;
+  margin: 12px 12px 12px 12px;
+  padding: 12px 12px 12px 12px;
 }
 
-.eventname{
-    border-radius: 5px;
-    background: orange !important; 
+td {
+  color: black;
+
+  background: yellow;
 }
 
-.eventdetails{
-    border-radius: 5px;
-    background: orange !important; 
+.eventname {
+  border-radius: 5px;
+  background: orange !important;
 }
 
+.eventdetails {
+  border-radius: 5px;
+  background: orange !important;
+}
 
-h1{
-    color: white;
+h1 {
+  color: white;
 }
 
 @media (max-width: 767px) {
-
-table{
+  table {
     display: block;
     overflow: auto;
-}
-
+  }
 }

@@ -20,6 +20,22 @@ body .modal-dialog { /* Width */
   width: auto !important;
   display: inline-block;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 10px;
+}
+
 
 ol{
   padding-left: 10px;
